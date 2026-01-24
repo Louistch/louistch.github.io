@@ -1,3 +1,3 @@
-document.getElementById("darkMode").addEventListener("click", () => {
-    document.body.classList.toggle("dark");
+document.getElementById("darkModeBtn").addEventListener("click", () => {
+document.body.classList.toggle("dark");
 });
