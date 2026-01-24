@@ -98,13 +98,14 @@ footer {
     text-align: center;
     padding: 12px 0;
 }
-.darkMode {
-    background: #111;
-    color: white;
+.dark {
+background: #111;
+color: white;
 }
 
-.darkMode .container {
-    background: #222;
+
+.dark .container {
+background: #222;
 }
 img{
 
@@ -113,4 +114,5 @@ img{
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 10px 25px #EB27F5;
+
 }
