@@ -1,0 +1,127 @@
+* {
+    box-sizing: inherit;
+}
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100%;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #969696;
+    padding:2em;
+    color: black;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: lightgrey;
+
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+/******************************* footeur ***************************************/
+.page-footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: #969696;
+    color: black;
+    padding: 20px;
+}
+/************************************* Réseaux ***********************************/
+    .container {
+        background: #ABABAB;
+        max-width: 400px;
+        margin-top: 50px;
+        margin-left:20px;
+        padding: 30px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 10px 25px #969696;
+    }
+    .social-links {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .social-links,a{
+        color:black;
+    }
+}
+
+
+/********************************************** Images *******************************************/
+    img{
+
+        width: 50px;
+        margin-right:10px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 10px 25px #969696;
+    }
+
+
+
+
+
+
+
+
+
+
+
+/**************************************pour les telephone***********************************/
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #969696;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
